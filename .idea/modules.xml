@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/historyData-db/historyData-db.iml" filepath="$PROJECT_DIR$/historyData-db/historyData-db.iml" />
-      <module fileurl="file://$PROJECT_DIR$/historyData-web/historyData-web.iml" filepath="$PROJECT_DIR$/historyData-web/historyData-web.iml" />
     </modules>
   </component>
 </project>

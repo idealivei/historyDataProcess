@@ -10,8 +10,14 @@ import java.util.Date;
 @Getter
 @Setter
 public class order {
-    public int id;
-    public String title;
+    private int id;
+    private String title;
     @JSONField(format="yyyy-MM-dd HH:mm:ss.SSS")
-    public Date updateTime;
+    private Date updateTime;
+
+    public order(String title, Date d){
+
+        this.title = title;
+        this.updateTime = d;
+    }
 }

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="historyData.web:war">
+    <output-path>$PROJECT_DIR$/historyData-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>historyData.web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="historyData.web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="historyData.web:war exploded" />
+    </root>
+  </artifact>
+</component>

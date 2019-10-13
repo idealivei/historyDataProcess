@@ -7,9 +7,39 @@
         <groupId>idealive</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>jar</packaging>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>historyData.task</artifactId>
+    <dependencies>
+        <!-- 内部引用 -->
+        <dependency>
+            <groupId>idealive</groupId>
+            <artifactId>historyData.db</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>idealive</groupId>
+            <artifactId>historyData.module</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <!-- end -->
 
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.0.3.RELEASE</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

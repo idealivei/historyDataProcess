@@ -6,15 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="historyData-web" />
-        <module name="historydata-Module" />
-        <module name="historyData-util" />
-        <module name="historyData-task" />
-        <module name="historyData-db" />
+        <module name="historyData.util" />
+        <module name="historyData.web" />
+        <module name="historyData.task" />
+        <module name="historyData.db" />
+        <module name="historyData.module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="historyData-db" target="1.5" />
+      <module name="historyData-Parent" target="1.5" />
+      <module name="historyData.db" target="1.5" />
+      <module name="historyData.module" target="1.5" />
+      <module name="historyData.task" target="1.5" />
+      <module name="historyData.util" target="8" />
+      <module name="historyData.web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

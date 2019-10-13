@@ -5,7 +5,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 扫描web相关的bean -->
-    <context:component-scan base-package="idealive.Test"/>
+    <!-- 配置数据库相关参数properties的属性：${url} -->
+    <!--读取属性文件 -->
+    <bean id="propertyConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+            </list>
+        </property>
+    </bean>
 
 
 </beans>

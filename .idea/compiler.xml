@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="historyData-web" />
+        <module name="historydata-Module" />
+        <module name="historyData-util" />
         <module name="historyData-task" />
         <module name="historyData-db" />
       </profile>
